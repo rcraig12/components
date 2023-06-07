@@ -1,5 +1,8 @@
 {
-  "name": "components",
+  "name": "@rcs/components",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/rcraig12"
+  },
   "version": "1.0.0",
   "description": "",
   "scripts": {
