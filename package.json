@@ -1,5 +1,5 @@
 {
-  "name": "@rcs/components",
+  "name": "@rcraig12/components",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/rcraig12"
   },
