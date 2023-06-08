@@ -1,6 +1,6 @@
 import React from 'react'
 
-enum ToastTypeEnum {
+export enum ToastTypes {
   Success = "Success",
   Warning = "Warning",
   Error = "Error",
@@ -9,15 +9,52 @@ enum ToastTypeEnum {
 
 interface ToastProps {
   message: string;
-  type: ToastTypeEnum,
-  canClose: boolean,
-  timer: number
+  type?: ToastTypes,
+  canClose?: boolean,
+  timer?: number
 }
 
-const Toast = (props: ToastProps) => {
+export const Toast = (props: ToastProps) => {
+
+  const toastType = props.type;
+
+  if ( toastType === ToastTypes.Success ) {
+
+    return (
+      <div>{`Success: ${props.message}`}</div>
+    )
+
+  }
+
+  if ( toastType === ToastTypes.Warning ) {
+
+    return (
+      <div>{`Warning: ${props.message}`}</div>
+    )
+
+  }
+
+  if ( toastType === ToastTypes.Error ) {
+
+    return (
+      <div>{`Error: ${props.message}`}</div>
+    )
+
+  }
+
+  if ( toastType === ToastTypes.Information ) {
+
+    return (
+      <div>{`Information: ${props.message}`}</div>
+    )
+
+  }
+
   return (
-    <div>{props.message}</div>
+    <div>{`Information: ${props.message}`}</div>
   )
+
+
+
 }
 
-export default Toast
