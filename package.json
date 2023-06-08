@@ -8,7 +8,7 @@
   "scripts": {
     "rollup": "rollup -c"
   },
-  "author": "Alex Eagleson",
+  "author": "Robert Craig",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.1.0",
