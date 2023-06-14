@@ -14,6 +14,6 @@ type Story = StoryObj<typeof Button>;
  * See https://storybook.js.org/docs/react/api/csf
  * to learn how to use render functions.
  */
-export const Primary: Story = {
+export const UI: Story = {
   render: () => <Button label="Click Me!" />
 };

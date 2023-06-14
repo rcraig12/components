@@ -14,7 +14,7 @@ type Story = StoryObj<typeof Toast>;
  * See https://storybook.js.org/docs/react/api/csf
  * to learn how to use render functions.
  */
-export const Primary: Story = {
+export const UI: Story = {
   render: () => (
     <Toast
       message="This is an informational message"
