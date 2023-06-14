@@ -16,7 +16,7 @@ interface ToastProps {
 
 export const Toast = (props: ToastProps) => {
 
-  const toastType = props.type;
+  const toastType = props?.type;
 
   if ( toastType === ToastTypes.Success ) {
 
