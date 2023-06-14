@@ -1,9 +1,9 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import {IPV4Address} from "./IPV4Address";
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import { IPV4Address } from './IPV4Address';
 
 const meta: Meta<typeof IPV4Address> = {
-  component: IPV4Address,
+  component: IPV4Address
 };
 
 export default meta;
@@ -15,5 +15,5 @@ type Story = StoryObj<typeof IPV4Address>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: () => <IPV4Address />,
+  render: () => <IPV4Address />
 };

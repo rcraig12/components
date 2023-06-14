@@ -1,9 +1,9 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import {Toast , ToastTypes} from "./Toast";
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import { Toast, ToastTypes } from './Toast';
 
 const meta: Meta<typeof Toast> = {
-  component: Toast,
+  component: Toast
 };
 
 export default meta;
@@ -15,5 +15,10 @@ type Story = StoryObj<typeof Toast>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: () => <Toast message="This is an informational message" type={ToastTypes.Information} />,
+  render: () => (
+    <Toast
+      message="This is an informational message"
+      type={ToastTypes.Information}
+    />
+  )
 };

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export const IPV4Address = () => {
   return (
-    <div className='rcIPV4AddressContainer'>
+    <div className="rcIPV4AddressContainer">
       <div>
         <div>Address</div>
         <input type="text" name="octet1" id="octet1" size={3} />
@@ -26,5 +26,5 @@ export const IPV4Address = () => {
         <input type="text" name="mask4" id="mask4" size={3} />
       </div>
     </div>
-  )
-}
+  );
+};
